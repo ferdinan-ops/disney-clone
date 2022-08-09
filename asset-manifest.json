@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c276a6b2.css",
-    "main.js": "/static/js/main.2f9193d1.js",
+    "main.js": "/static/js/main.a86abab9.js",
     "static/media/avenir_roman_12.woff": "/static/media/avenir_roman_12.a04564f695b5a542102a.woff",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,10 +9,10 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.c276a6b2.css.map": "/static/css/main.c276a6b2.css.map",
-    "main.2f9193d1.js.map": "/static/js/main.2f9193d1.js.map"
+    "main.a86abab9.js.map": "/static/js/main.a86abab9.js.map"
   },
   "entrypoints": [
     "static/css/main.c276a6b2.css",
-    "static/js/main.2f9193d1.js"
+    "static/js/main.a86abab9.js"
   ]
 }
