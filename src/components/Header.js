@@ -65,7 +65,21 @@ const Header = (props) => {
     });
   }, [userName]);
 
-  const handleHamburger = () => setActive("active");
+  useEffect(() => {
+    document.body.addEventListener("click", () => {
+      setActive("");
+    });
+    return () => {
+      document.body.removeEventListener("click", () => {
+        setActive("");
+      });
+    };
+  }, []);
+
+  const handleHamburger = (event) => {
+    event.stopPropagation();
+    setActive("active");
+  };
 
   return (
     <Nav>
@@ -84,11 +98,6 @@ const Header = (props) => {
       ) : (
         <>
           <NavMenu className={active}>
-            <img
-              src="/images/close-icon.svg"
-              alt=""
-              onClick={() => setActive("")}
-            />
             <a href="/home">
               <img src="/images/home-icon.svg" alt=".." />
               <span>Home</span>
@@ -202,7 +211,7 @@ const NavMenu = styled.div`
       left: -26px;
       width: 75vw;
       background-color: #192133;
-      padding: 55px 20px;
+      padding: 50px 30px;
       gap: 30px;
       height: 100vh;
       flex-direction: column;
